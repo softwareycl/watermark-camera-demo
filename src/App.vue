@@ -1,17 +1,23 @@
+<!--
+ * @Author: YCL
+ * @Date: 2025-08-31 15:56:09
+ * @LastEditors: YCL
+ * @LastEditTime: 2025-09-14 19:28:41
+ * @Description: 
+-->
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <CameraDemo />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import CameraDemo from './components/cameraDemo.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    CameraDemo
   }
 }
 </script>
@@ -23,6 +29,11 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+
+body, html {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
 }
 </style>
